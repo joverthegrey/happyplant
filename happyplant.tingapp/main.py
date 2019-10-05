@@ -24,7 +24,9 @@ client.loop_start()
 @every(seconds=1.0/30)
 def loop():
     # drawing code here
-    screen.fill(color='black')
+    screen.fill(color='green')
+    screen.rectangle(xy=(0,0), size=(320,20), color='olive', align='topleft')
+    screen.image('happy.png', xy=(0,30), align='topleft')
     screen.text(message)
 
 tingbot.run()
